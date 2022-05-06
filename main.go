@@ -1,7 +1,13 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	_ "embed"
+	"github.com/gin-gonic/gin"
+)
 import "net/http"
+
+//go:embed version.txt
+var version string
 
 func main() {
 	r := gin.Default()
