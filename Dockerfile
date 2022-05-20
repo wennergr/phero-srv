@@ -15,4 +15,4 @@ FROM alpine:3.15.4
 
 COPY --from=0 "/usr/src/app/gin-helloworld" gin-helloworld
 
-ENTRYPOINT ./gin-helloworld
+ENTRYPOINT ["./gin-helloworld"]
