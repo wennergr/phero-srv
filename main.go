@@ -41,6 +41,10 @@ func main() {
 		})
 	})
 
+	api.GET("/headers", func(c *gin.Context) {
+		c.JSON(http.StatusOK, c.Request.Header)
+	})
+
 	api.GET("/hello", func(c *gin.Context) {
 		resp, err := http.Get("http://phero-hidden:8080/ping")
 
