@@ -5,8 +5,8 @@ on:
     branches: [ main ]
 
 env:
-  NAME: phero-srv1
-  IMAGE_NAME: ghcr.io/wennergr/phero-srv1
+  NAME: phero-srv
+  IMAGE_NAME: ghcr.io/wennergr/phero-srv
 
 jobs:
   docker:
