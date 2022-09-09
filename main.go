@@ -46,7 +46,7 @@ func main() {
 	})
 
 	api.GET("/hello", func(c *gin.Context) {
-		resp, err := http.Get("http://phero-hidden/ping")
+        resp, err := http.Get("http://phero-hidden:9080/ping")
 
 		var ping_response = Ping_Response{"Unknown", "Unknown"}
 
